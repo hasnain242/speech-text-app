@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>speech-text</title>
+    <title>Web Speech</title>
 </head>
 <body>
-    <script src="./script.js"></script>
+    <div class="container">
+        <h1>Web Speech</h1>
+        <button class="btn toggle-btn" id="toggle">
+            Toggle Custom Text
+        </button>
+        <div class="custom-text" id="custom-text">
+            <div class="close" id="close">X</div>
+            <h3>Change Voice</h3>
+            <select id="voices"></select>
+            <textarea id="text" placeholder="Please provide your custom text for the Web Speech API Reader"></textarea>
+            <button class="btn" id="read">Read Custom Text</button>
+        </div>
+        <main id="main"></main>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
